@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<config>
+	<tabs>
+		<sschollCore translate="label">
+			<label>SScholl Modules</label>
+			<sort_order>101</sort_order>
+		</sschollCore>
+	</tabs>
+	<sections>
+		<sschollbooks translate="label" module="sschollbooks">
+			<label>Books</label>
+			<tab>sschollCore</tab>
+			<sort_order>1000</sort_order>
+			<show_in_default>1</show_in_default>
+			<show_in_website>1</show_in_website>
+			<show_in_store>1</show_in_store>
+			<groups>
+				<!--<book translate="label">
+					<label>Book Settings</label>
+					<sort_order>100</sort_order>
+					<show_in_default>1</show_in_default>
+					<show_in_website>1</show_in_website>
+					<show_in_store>1</show_in_store>
+					<fields>
+						<attribute_set_id translate="label comment">
+							<label>Product Attribute Set Id</label>
+							<comment>Product attribute set for books.</comment>
+							<frontend_type>text</frontend_type>
+							<source_model>tax/class_source_product</source_model>
+							<sort_order>100</sort_order>
+							<show_in_default>1</show_in_default>
+							<show_in_website>1</show_in_website>
+							<show_in_store>1</show_in_store>
+						</attribute_set_id>
+					</fields>
+				</book>-->
+				<product_tax_class_id translate="label">
+					<label>Product Tax Classes</label>
+					<sort_order>200</sort_order>
+					<show_in_default>1</show_in_default>
+					<show_in_website>1</show_in_website>
+					<show_in_store>1</show_in_store>
+					<fields>
+						<high translate="label comment">
+							<label>Higher Tax Class</label>
+							<comment></comment>
+							<frontend_type>select</frontend_type>
+							<source_model>tax/class_source_product</source_model>
+							<sort_order>100</sort_order>
+							<show_in_default>1</show_in_default>
+							<show_in_website>1</show_in_website>
+							<show_in_store>1</show_in_store>
+						</high>
+						<standard translate="label comment">
+							<label>Standard Tax Class</label>
+							<comment></comment>
+							<frontend_type>select</frontend_type>
+							<source_model>tax/class_source_product</source_model>
+							<sort_order>200</sort_order>
+							<show_in_default>1</show_in_default>
+							<show_in_website>1</show_in_website>
+							<show_in_store>1</show_in_store>
+						</standard>
+						<reduced translate="label comment">
+							<label>Reduced Tax Class</label>
+							<comment></comment>
+							<frontend_type>select</frontend_type>
+							<source_model>tax/class_source_product</source_model>
+							<sort_order>300</sort_order>
+							<show_in_default>1</show_in_default>
+							<show_in_website>1</show_in_website>
+							<show_in_store>1</show_in_store>
+						</reduced>
+						<free translate="label comment">
+							<label>Tax Class Free</label>
+							<comment></comment>
+							<frontend_type>select</frontend_type>
+							<source_model>tax/class_source_product</source_model>
+							<sort_order>400</sort_order>
+							<show_in_default>1</show_in_default>
+							<show_in_website>1</show_in_website>
+							<show_in_store>1</show_in_store>
+						</free>
+					</fields>
+				</product_tax_class_id>
+			</groups>
+		</sschollbooks>
+	</sections>
+</config>

@@ -1,0 +1,280 @@
+<?php /**************** Copyright notice ************************
+ *  (c) 2011 Simon Eric Scholl <simon@sdscholl.de>
+ *  All rights reserved
+ *
+ * This source file is subject to the Open Software License (OSL 3.0)
+ * that is bundled with this package in the file LICENSE.txt.
+ * It is also available through the world-wide-web at this URL:
+ * http://opensource.org/licenses/osl-3.0.php
+ ***************************************************************/
+
+class SScholl_Books_Model_Book_List_Countrycode
+	extends Varien_Object
+{
+
+	public function getAllOptions()
+	{
+		return $this->_options;
+	}
+
+    public function getOption($option)
+    {
+        return $this->_options[$option];
+    }
+
+	protected $_options = array(
+		'AD'	=>	'Andorra', //MARKER
+		'AE'	=>	'United Arab Emirates', //MARKER
+		'AF'	=>	'Afghanistan', //MARKER
+		'AG'	=>	'Antigua and Barbuda', //MARKER
+		'AI'	=>	'Anguilla', //MARKER
+		'AL'	=>	'Albania', //MARKER
+		'AM'	=>	'Armenia', //MARKER
+		'AN'	=>	'Netherlands Antilles', //Deprecated – use BQ, CW or SX as appropriate. MARKER
+		'AO'	=>	'Angola', //MARKER
+		'AQ'	=>	'Antarctica', //MARKER
+		'AR'	=>	'Argentina', //MARKER
+		'AS'	=>	'American Samoa', //MARKER
+		'AT'	=>	'Austria', //MARKER
+		'AU'	=>	'Australia', //MARKER
+		'AW'	=>	'Aruba', //MARKER
+		'AX'	=>	'Åland Islands', //MARKER
+		'AZ'	=>	'Azerbaijan', //MARKER
+		'BA'	=>	'Bosnia and Herzegovina', //MARKER
+		'BB'	=>	'Barbados', //MARKER
+		'BD'	=>	'Bangladesh', //MARKER
+		'BE'	=>	'Belgium', //MARKER
+		'BF'	=>	'Burkina Faso', //MARKER
+		'BG'	=>	'Bulgaria', //MARKER
+		'BH'	=>	'Bahrain', //MARKER
+		'BI'	=>	'Burundi', //MARKER
+		'BJ'	=>	'Benin', //MARKER
+		'BL'	=>	'Saint Barthélemy', //MARKER
+		'BM'	=>	'Bermuda', //MARKER
+		'BN'	=>	'Brunei Darussalam', //MARKER
+		'BO'	=>	'Bolivia, Plurinational State of', //MARKER
+		'BQ'	=>	'Bonaire, Sint Eustatius and Saba', //MARKER
+		'BR'	=>	'Brazil', //MARKER
+		'BS'	=>	'Bahamas', //MARKER
+		'BT'	=>	'Bhutan', //MARKER
+		'BV'	=>	'Bouvet Island', //MARKER
+		'BW'	=>	'Botswana', //MARKER
+		'BY'	=>	'Belarus', //MARKER
+		'BZ'	=>	'Belize', //MARKER
+		'CA'	=>	'Canada', //MARKER
+		'CC'	=>	'Cocos (Keeling) Islands', //MARKER
+		'CD'	=>	'Congo, Democratic Republic of the', //MARKER
+		'CF'	=>	'Central African Republic', //MARKER
+		'CG'	=>	'Congo', //MARKER
+		'CH'	=>	'Switzerland', //MARKER
+		'CI'	=>	'Cote d’Ivoire', //MARKER
+		'CK'	=>	'Cook Islands', //MARKER
+		'CL'	=>	'Chile', //MARKER
+		'CM'	=>	'Cameroon', //MARKER
+		'CN'	=>	'China', //MARKER
+		'CO'	=>	'Colombia', //MARKER
+		'CR'	=>	'Costa Rica', //MARKER
+		'CS'	=>	'Serbia and Montenegro', //DEPRECATED, replaced by ME – Montenegro and RS – Serbia. MARKER
+		'CU'	=>	'Cuba', //MARKER
+		'CV'	=>	'Cape Verde', //MARKER
+		'CW'	=>	'Curaçao', //MARKER
+		'CX'	=>	'Christmas Island', //MARKER
+		'CY'	=>	'Cyprus', //MARKER
+		'CZ'	=>	'Czech Republic', //MARKER
+		'DE'	=>	'Germany', //MARKER
+		'DJ'	=>	'Djibouti', //MARKER
+		'DK'	=>	'Denmark', //MARKER
+		'DM'	=>	'Dominica', //MARKER
+		'DO'	=>	'Dominican Republic', //MARKER
+		'DZ'	=>	'Algeria', //MARKER
+		'EC'	=>	'Ecuador', //MARKER
+		'EE'	=>	'Estonia', //MARKER
+		'EG'	=>	'Egypt', //MARKER
+		'EH'	=>	'Western Sahara', //MARKER
+		'ER'	=>	'Eritrea', //MARKER
+		'ES'	=>	'Spain', //MARKER
+		'ET'	=>	'Ethiopia', //MARKER
+		'FI'	=>	'Finland', //MARKER
+		'FJ'	=>	'Fiji', //MARKER
+		'FK'	=>	'Falkland Islands (Malvinas)', //MARKER
+		'FM'	=>	'Micronesia, Federated States of', //MARKER
+		'FO'	=>	'Faroe Islands', //MARKER
+		'FR'	=>	'France', //MARKER
+		'GA'	=>	'Gabon', //MARKER
+		'GB'	=>	'United Kingdom', //MARKER
+		'GD'	=>	'Grenada', //MARKER
+		'GE'	=>	'Georgia', //MARKER
+		'GF'	=>	'French Guiana', //MARKER
+		'GG'	=>	'Guernsey', //MARKER
+		'GH'	=>	'Ghana', //MARKER
+		'GI'	=>	'Gibraltar', //MARKER
+		'GL'	=>	'Greenland', //MARKER
+		'GM'	=>	'Gambia', //MARKER
+		'GN'	=>	'Guinea', //MARKER
+		'GP'	=>	'Guadeloupe', //MARKER
+		'GQ'	=>	'Equatorial Guinea', //MARKER
+		'GR'	=>	'Greece', //MARKER
+		'GS'	=>	'South Georgia and the South Sandwich Islands', //MARKER
+		'GT'	=>	'Guatemala', //MARKER
+		'GU'	=>	'Guam', //MARKER
+		'GW'	=>	'Guinea-Bissau', //MARKER
+		'GY'	=>	'Guyana', //MARKER
+		'HK'	=>	'Hong Kong', //MARKER
+		'HM'	=>	'Heard Island and McDonald Islands', //MARKER
+		'HN'	=>	'Honduras', //MARKER
+		'HR'	=>	'Croatia', //MARKER
+		'HT'	=>	'Haiti', //MARKER
+		'HU'	=>	'Hungary', //MARKER
+		'ID'	=>	'Indonesia', //MARKER
+		'IE'	=>	'Ireland', //MARKER
+		'IL'	=>	'Israel', //MARKER
+		'IM'	=>	'Isle of Man', //MARKER
+		'IN'	=>	'India', //MARKER
+		'IO'	=>	'British Indian Ocean Territory', //MARKER
+		'IQ'	=>	'Iraq', //MARKER
+		'IR'	=>	'Iran, Islamic Republic of', //MARKER
+		'IS'	=>	'Iceland', //MARKER
+		'IT'	=>	'Italy', //MARKER
+		'JE'	=>	'Jersey', //MARKER
+		'JM'	=>	'Jamaica', //MARKER
+		'JO'	=>	'Jordan', //MARKER
+		'JP'	=>	'Japan', //MARKER
+		'KE'	=>	'Kenya', //MARKER
+		'KG'	=>	'Kyrgyzstan', //MARKER
+		'KH'	=>	'Cambodia', //MARKER
+		'KI'	=>	'Kiribati', //MARKER
+		'KM'	=>	'Comoros', //MARKER
+		'KN'	=>	'Saint Kitts and Nevis', //MARKER
+		'KP'	=>	'Korea, Democratic People’s Republic of', //MARKER
+		'KR'	=>	'Korea, Republic of', //MARKER
+		'KW'	=>	'Kuwait', //MARKER
+		'KY'	=>	'Cayman Islands', //MARKER
+		'KZ'	=>	'Kazakhstan', //MARKER
+		'LA'	=>	'Lao People’s Democratic Republic', //MARKER
+		'LB'	=>	'Lebanon', //MARKER
+		'LC'	=>	'Saint Lucia', //MARKER
+		'LI'	=>	'Liechtenstein', //MARKER
+		'LK'	=>	'Sri Lanka', //MARKER
+		'LR'	=>	'Liberia', //MARKER
+		'LS'	=>	'Lesotho', //MARKER
+		'LT'	=>	'Lithuania', //MARKER
+		'LU'	=>	'Luxembourg', //MARKER
+		'LV'	=>	'Latvia', //MARKER
+		'LY'	=>	'Libya', //MARKER
+		'MA'	=>	'Morocco', //MARKER
+		'MC'	=>	'Monaco', //MARKER
+		'MD'	=>	'Moldova, Repubic of', //MARKER
+		'ME'	=>	'Montenegro', //MARKER
+		'MF'	=>	'Saint Martin (French part)', //MARKER
+		'MG'	=>	'Madagascar', //MARKER
+		'MH'	=>	'Marshall Islands', //MARKER
+		'MK'	=>	'Macedonia, the former Yugoslav Republic of', //MARKER
+		'ML'	=>	'Mali', //MARKER
+		'MM'	=>	'Myanmar', //MARKER
+		'MN'	=>	'Mongolia', //MARKER
+		'MO'	=>	'Macao', //MARKER
+		'MP'	=>	'Northern Mariana Islands', //MARKER
+		'MQ'	=>	'Martinique', //MARKER
+		'MR'	=>	'Mauritania', //MARKER
+		'MS'	=>	'Montserrat', //MARKER
+		'MT'	=>	'Malta', //MARKER
+		'MU'	=>	'Mauritius', //MARKER
+		'MV'	=>	'Maldives', //MARKER
+		'MW'	=>	'Malawi', //MARKER
+		'MX'	=>	'Mexico', //MARKER
+		'MY'	=>	'Malaysia', //MARKER
+		'MZ'	=>	'Mozambique', //MARKER
+		'NA'	=>	'Namibia', //MARKER
+		'NC'	=>	'New Caledonia', //MARKER
+		'NE'	=>	'Niger', //MARKER
+		'NF'	=>	'Norfolk Island', //MARKER
+		'NG'	=>	'Nigeria', //MARKER
+		'NI'	=>	'Nicaragua', //MARKER
+		'NL'	=>	'Netherlands', //MARKER
+		'NO'	=>	'Norway', //MARKER
+		'NP'	=>	'Nepal', //MARKER
+		'NR'	=>	'Nauru', //MARKER
+		'NU'	=>	'Niue', //MARKER
+		'NZ'	=>	'New Zealand', //MARKER
+		'OM'	=>	'Oman', //MARKER
+		'PA'	=>	'Panama', //MARKER
+		'PE'	=>	'Peru', //MARKER
+		'PF'	=>	'French Polynesia', //MARKER
+		'PG'	=>	'Papua New Guinea', //MARKER
+		'PH'	=>	'Philippines', //MARKER
+		'PK'	=>	'Pakistan', //MARKER
+		'PL'	=>	'Poland', //MARKER
+		'PM'	=>	'Saint Pierre and Miquelon', //MARKER
+		'PN'	=>	'Pitcairn', //MARKER
+		'PR'	=>	'Puerto Rico', //MARKER
+		'PS'	=>	'Palestinian Territory, Occupied', //MARKER
+		'PT'	=>	'Portugal', //MARKER
+		'PW'	=>	'Palau', //MARKER
+		'PY'	=>	'Paraguay', //MARKER
+		'QA'	=>	'Qatar', //MARKER
+		'RE'	=>	'Réunion', //MARKER
+		'RO'	=>	'Romania', //MARKER
+		'RS'	=>	'Serbia', //MARKER
+		'RU'	=>	'Russian Federation', //MARKER
+		'RW'	=>	'Rwanda', //MARKER
+		'SA'	=>	'Saudi Arabia', //MARKER
+		'SB'	=>	'Solomon Islands', //MARKER
+		'SC'	=>	'Seychelles', //MARKER
+		'SD'	=>	'Sudan', //MARKER
+		'SE'	=>	'Sweden', //MARKER
+		'SG'	=>	'Singapore', //MARKER
+		'SH'	=>	'Saint Helena, Ascension and Tristan da Cunha', //MARKER
+		'SI'	=>	'Slovenia', //MARKER
+		'SJ'	=>	'Svalbard and Jan Mayen', //MARKER
+		'SK'	=>	'Slovakia', //MARKER
+		'SL'	=>	'Sierra Leone', //MARKER
+		'SM'	=>	'San Marino', //MARKER
+		'SN'	=>	'Senegal', //MARKER
+		'SO'	=>	'Somalia', //MARKER
+		'SR'	=>	'Suriname', //MARKER
+		'SS'	=>	'South Sudan', //MARKER
+		'ST'	=>	'Sao Tome and Principe', //MARKER
+		'SV'	=>	'El Salvador', //MARKER
+		'SX'	=>	'Sint Maarten (Dutch part)', //MARKER
+		'SY'	=>	'Syrian Arab Republic', //MARKER
+		'SZ'	=>	'Swaziland', //MARKER
+		'TC'	=>	'Turks and Caicos Islands', //MARKER
+		'TD'	=>	'Chad', //MARKER
+		'TF'	=>	'French Southern Territories', //MARKER
+		'TG'	=>	'Togo', //MARKER
+		'TH'	=>	'Thailand', //MARKER
+		'TJ'	=>	'Tajikistan', //MARKER
+		'TK'	=>	'Tokelau', //MARKER
+		'TL'	=>	'Timor-Leste', //MARKER
+		'TM'	=>	'Turkmenistan', //MARKER
+		'TN'	=>	'Tunisia', //MARKER
+		'TO'	=>	'Tonga', //MARKER
+		'TR'	=>	'Turkey', //MARKER
+		'TT'	=>	'Trinidad and Tobago', //MARKER
+		'TV'	=>	'Tuvalu', //MARKER
+		'TW'	=>	'Taiwan, Province of China', //MARKER
+		'TZ'	=>	'Tanzania, United Republic of', //MARKER
+		'UA'	=>	'Ukraine', //MARKER
+		'UG'	=>	'Uganda', //MARKER
+		'UM'	=>	'United States Minor Outlying Islands', //MARKER
+		'US'	=>	'United States', //MARKER
+		'UY'	=>	'Uruguay', //MARKER
+		'UZ'	=>	'Uzbekistan', //MARKER
+		'VA'	=>	'Holy See (Vatican City State)', //MARKER
+		'VC'	=>	'Saint Vincent and the Grenadines', //MARKER
+		'VE'	=>	'Venezuela, Bolivarian Republic of', //MARKER
+		'VG'	=>	'Virgin Islands, British', //MARKER
+		'VI'	=>	'Virgin Islands, US', //MARKER
+		'VN'	=>	'Viet Nam', //MARKER
+		'VU'	=>	'Vanuatu', //MARKER
+		'WF'	=>	'Wallis and Futuna', //MARKER
+		'WS'	=>	'Samoa', //MARKER
+		'YE'	=>	'Yemen', //MARKER
+		'YT'	=>	'Mayotte', //MARKER
+		'YU'	=>	'Yugoslavia', //DEPRECATED, replaced by ME – Montenegro and RS – Serbia. MARKER
+		'ZA'	=>	'South Africa', //MARKER
+		'ZM'	=>	'Zambia', //MARKER
+		'ZW'	=>	'Zimbabwe', //MARKER
+	);
+
+}

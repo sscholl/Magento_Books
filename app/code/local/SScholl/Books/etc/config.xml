@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<config>
+	<modules>
+		<SScholl_Books>
+			<version>0.0.1</version>
+		</SScholl_Books>
+	</modules>
+	<global>
+		<helpers>
+			<sschollbooks>
+				<class>SScholl_Books_Helper</class>
+			</sschollbooks>
+		</helpers>
+		<models>
+			<sschollbooks>
+				<class>SScholl_Books_Model</class>
+			</sschollbooks>
+		</models>
+		<resources>
+			<sschollbooks_setup>
+				<setup>
+					<module>SScholl_Books</module>
+					<class>Mage_Catalog_Model_Resource_Setup</class>
+				</setup>
+			</sschollbooks_setup>
+		</resources>
+	</global>
+</config>
